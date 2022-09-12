@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRGeneratorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Export Schedule"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/QrTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Generated QR Code:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/QrGenText"
+        android:layout_below="@+id/QrTitle"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/QrDisplay"
+        android:layout_below="@+id/QrGenText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Tell your friends to scan this QR to get your schedule!"
+        android:textSize="20sp"
+        android:id="@+id/QrMessage"
+        android:layout_below="@+id/QrDisplay"/>
+    <Button
+        android:id="@+id/CancelGeneratorButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="Cancel"
+        android:layout_below="@+id/QrMessage"/>
+
+</RelativeLayout>
